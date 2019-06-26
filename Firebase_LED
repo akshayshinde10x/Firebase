@@ -1,5 +1,5 @@
 #include <WiFi.h>                                                 
-#include <FirebaseArduino.h>// firebase library
+#include <IOXhop_FirebaseESP32.h>// firebase library
 // Set these to run example.
 
 #define FIREBASE_HOST "home-automation-a55b6.firebaseio.com"
