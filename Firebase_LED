@@ -1,4 +1,4 @@
-#include <ESP8266WiFi.h>                                                 
+#include <WiFi.h>                                                 
 #include <FirebaseArduino.h>// firebase library
 // Set these to run example.
 
