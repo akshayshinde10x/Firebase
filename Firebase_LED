@@ -3,9 +3,9 @@
 // Set these to run example.
 
 #define FIREBASE_HOST "home-automation-a55b6.firebaseio.com"
-#define FIREBASE_AUTH "xfyJFQMGjjD6T0Jllekgq08JIpWCg5Si71LZpC5R"
+#define FIREBASE_AUTH "********6T0Jllekgq08JIpWCg5Si71LZpC5R"
 #define WIFI_SSID "Redmi"
-#define WIFI_PASSWORD "123456789"
+#define WIFI_PASSWORD "*********"
 #define LED 2
 
 void setup() {
