@@ -35,35 +35,22 @@ Serial.println(WiFi.localIP());
 
 Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
 
-Firebase.setInt("LEDStatus",0);
-
+Firebase.setString("LEDStatus","OFF");
 }
 
 void loop() {
+String status = Firebase.getString("ESP8266_Test/FAN");
+Serial.println(status);
 
-if(Firebase.getInt("LEDStatus"))
-
-{
-
+if(status =="ON"){
 digitalWrite(LED,HIGH);
-
 }
-
-else
-
-{
-
+else{
 digitalWrite(LED,LOW);
-
 }
-
 if (Firebase.failed()) {
-
 Serial.print("setting /number failed:");
-
 Serial.println(Firebase.error());
-
 return;
 }
-
 }
